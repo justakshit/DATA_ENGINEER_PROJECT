@@ -1,9 +1,0 @@
-{
-	"name": "adfcourse-arpit",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "586b2488-72b4-4992-814e-c600c5d74a75",
-		"tenantId": "1e619b77-d652-418c-ba43-ceca754dac1d"
-	}
-}
