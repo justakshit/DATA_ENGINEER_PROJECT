@@ -1,0 +1,24 @@
+{
+	"name": "storageActivation",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "SwitchCase",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/source/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/77e6efd1-7ec7-44d3-8d55-f64c88406afd/resourceGroups/ADL_COURSE/providers/Microsoft.Storage/storageAccounts/storagedatafactoryarpit",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
