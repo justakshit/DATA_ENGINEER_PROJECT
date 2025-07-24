@@ -50,7 +50,13 @@
 							"inputs": [
 								{
 									"referenceName": "RestResource1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"country-name": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [

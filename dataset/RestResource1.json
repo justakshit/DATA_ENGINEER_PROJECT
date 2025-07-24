@@ -3,7 +3,18 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "RestService1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"country_url": {
+					"value": "@dataset().country-name",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"country-name": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "RestResource",
