@@ -117,7 +117,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "pipeline1",
+									"referenceName": "DesignthepipelineinsuchamannerthatitwillpasstheCustomerpipelinepassthecustomercounttothechildproductpipeline",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true
