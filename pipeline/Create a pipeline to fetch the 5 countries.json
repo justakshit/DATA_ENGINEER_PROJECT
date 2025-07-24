@@ -50,19 +50,19 @@
 							"inputs": [
 								{
 									"referenceName": "RestResource1",
-									"type": "DatasetReference",
-									"parameters": {
-										"country-name": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "Json1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"file_name": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

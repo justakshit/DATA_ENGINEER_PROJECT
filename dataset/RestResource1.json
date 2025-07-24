@@ -6,14 +6,15 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"country_url": {
-					"value": "@dataset().country-name",
+					"value": "@dataset().country_name",
 					"type": "Expression"
 				}
 			}
 		},
 		"parameters": {
-			"country-name": {
-				"type": "string"
+			"country_name": {
+				"type": "string",
+				"defaultValue": "@item()"
 			}
 		},
 		"annotations": [],
