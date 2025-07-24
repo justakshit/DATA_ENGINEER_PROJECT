@@ -1,0 +1,34 @@
+{
+	"name": "ScheduleTrigger",
+	"properties": {
+		"description": "This trigger is invoked in such a way that it will automatically run two times in a day ( 12:00 AM and 12:00 PM IST) \n",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Create a pipeline to fetch the 5 countries",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"country_names": [
+						"https://restcountries.com/v3.1/name/india",
+						"https://restcountries.com/v3.1/name/us",
+						"https://restcountries.com/v3.1/name/china",
+						"https://restcountries.com/v3.1/name/uk",
+						"https://restcountries.com/v3.1/name/russia"
+					]
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 12,
+				"startTime": "2025-07-24T23:59:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
