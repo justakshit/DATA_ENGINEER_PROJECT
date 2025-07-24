@@ -5,8 +5,20 @@
 		"factoryName": {
 			"value": "adfcourse-arpit"
 		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
 		"connection_accountKey": {
 			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "akshitdbserver.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "1stdatabase"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "admin001"
 		},
 		"RestService1_properties_typeProperties_url": {
 			"value": "@{linkedService().country_url}"
