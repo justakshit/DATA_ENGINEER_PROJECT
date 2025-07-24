@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfcourse-arpit"
+		},
+		"connection_accountKey": {
+			"value": ""
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "@{linkedService().country_url}"
+		},
+		"connection_properties_typeProperties_url": {
+			"value": "https://storagedatafactoryarpit.dfs.core.windows.net/"
+		},
+		"ScheduleTrigger_properties_Create a pipeline to fetch the 5 countries_parameters_country_names": {
+			"value": [
+				"https://restcountries.com/v3.1/name/india",
+				"https://restcountries.com/v3.1/name/us",
+				"https://restcountries.com/v3.1/name/china",
+				"https://restcountries.com/v3.1/name/uk",
+				"https://restcountries.com/v3.1/name/russia"
+			]
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
