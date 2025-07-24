@@ -1,0 +1,17 @@
+{
+	"name": "RestService1",
+	"properties": {
+		"parameters": {
+			"country_url": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "@{linkedService().country_url}",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
